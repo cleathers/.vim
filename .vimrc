@@ -15,6 +15,7 @@ set number
 set tabstop=2
 set shiftwidth=2
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set colorcolumn=80
 
 au BufRead,BufNewFile *.coffee set filetype=coffee
 au BufRead,BufNewFile *.json set filetype=json
@@ -36,7 +37,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-map <T> :NERDTreeToggle<CR>
+map <C-u> :NERDTreeToggle<CR>
 map <C-e> :noh<CR>
 map <C-l> :30winc ><CR>
 map <C-h> :30winc <<CR>
@@ -49,3 +50,13 @@ map <C-y> :source ~/.vim/session<CR>
 hi UNDO ctermfg=red
 match UNDO /UNDO/
 autocmd InsertLeave * match UNDO /UNDO/
+
+let g:airline_powerline_fonts=1
+set guifont=Hack
+set t_Co=256
+set term=xterm-256color
+set termencoding=utf-8
+let g:airline_left_sep = '|'
+let g:airline_left_alt_sep = '|'
+let g:airline_right_sep = '|'
+let g:airline_right_alt_sep = '|'
