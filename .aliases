@@ -43,6 +43,3 @@ alias cd1="cd && cd source/"
 alias cdd="cd && cd source/dashboard"
 alias cdo="cd && cd source/Offers"
 alias cdtool="cd && cd Documents/tooling"
-
-# SETTING / UNSETTING ENVIRONMENT VARIABLES
-alias cuenvs="export HIJACK_HOST=localhost && export HIJACK_PORT=9000"
