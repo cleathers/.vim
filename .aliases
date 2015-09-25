@@ -20,6 +20,7 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # CHARLIES ALIASES
 alias bd="cd ../"
+alias c="clear"
 alias grep="grep --color"
 
 alias v="vim"
@@ -29,6 +30,7 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias gf="git fetch"
 alias gl="git log"
 alias gls="git branch -vv"
 alias gg="git grep -n"
@@ -36,6 +38,7 @@ alias ggi="git grep -in"
 alias gp="git pull"
 alias gs="git status"
 alias grh="git reset HEAD"
+alias ghist="git hist"
 
 # DIRECTORIES
 alias cd2="cd && cd source2"

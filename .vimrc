@@ -27,6 +27,7 @@ au BufRead,BufNewFile Gemfile set filetype=ruby
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 
 
+autocmd FileType jade setlocal commentstring=\/\/\-\ %s
 autocmd FileType coffee set commentstring=#\ %s
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -51,12 +52,26 @@ hi UNDO ctermfg=red
 match UNDO /UNDO/
 autocmd InsertLeave * match UNDO /UNDO/
 
-let g:airline_powerline_fonts=1
 set guifont=Hack
 set t_Co=256
 set term=xterm-256color
 set termencoding=utf-8
+
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+
+let g:airline_powerline_fonts=1
 let g:airline_left_sep = '|'
-let g:airline_left_alt_sep = '|'
+let g:airline_left_sep = '|'
 let g:airline_right_sep = '|'
-let g:airline_right_alt_sep = '|'
+let g:airline_right_sep = '|'
+let g:airline_symbols.crypt = '|'
+let g:airline_symbols.linenr = '|'
+let g:airline_symbols.linenr = '|'
+let g:airline_symbols.linenr = '|'
+let g:airline_symbols.branch = '|'
+let g:airline_symbols.paste = '|'
+let g:airline_symbols.paste = '|'
+let g:airline_symbols.paste = '|'
+let g:airline_symbols.whitespace = '|'
