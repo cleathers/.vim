@@ -11,6 +11,7 @@ filetype plugin indent on
 colorscheme solarized
 
 set laststatus=2
+set relativenumber
 set number
 set tabstop=2
 set shiftwidth=2
